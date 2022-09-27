@@ -1,0 +1,341 @@
+$primary: #00e0ff
+$font-primary: 'Poppins', sans-serif
+$font-secondary: 'Roboto', sans-serif
+
+body::-webkit-scrollbar 
+    display: none
+
+body
+    -ms-overflow-style: none
+    scrollbar-width: none
+
+h1,h2,h3,h4,h5,h6
+    font-family: $font-primary
+p 
+    font-family: $font-secondary
+
+#header
+    nav 
+        height: 10vh
+
+        .navbar-brand
+            font-family: $font-primary
+
+        .nav-item
+            padding-left: 30px
+            font-weight: 700
+            letter-spacing: 1px
+        .btn-nav
+            background-color: black
+            color: white
+            border-radius: 0
+            
+
+
+    .title
+        height: 90.052vh
+        min-height: 700px
+        display: flex
+        align-items: center
+
+        .heading-container
+            border-left: 7px solid #00e0ff
+            // padding: 0 0 0 80px
+            // margin: 0 0 100px -15px
+            height: fit-content
+
+        p 
+            // font-size: 20px
+
+        h1 
+            // font-size: 80px
+            // color: white
+        h2
+            font-family: 'Roboto', sans-serif;
+            // font-size: 28px
+            color: #0e0c0c73
+        path 
+            transition: fill .5s ease
+        svg 
+            margin: 5px 5px 0 0
+            width: 40px
+            path 
+                fill: #a8a8a8
+            &:hover
+                path
+                    fill: $primary
+
+        a
+            color: white
+            border-radius: 0
+            font-family: 'Poppins', sans-serif
+            font-weight: 500px
+            padding: 10px
+            margin: 20px 5px 10px 0 
+
+        .contact
+            background-color: #00e0ff
+            border: 1.5px solid #00e0ff
+
+            &:hover
+                background-color: #ffffff
+                color: black
+        .download
+            background-color: #000000
+            border: 1.5px solid black
+
+            &:hover
+                background-color: #ffffff
+                color: black
+#about
+    // height: 100vh
+    h3 
+        font-size: 70px
+        padding-bottom: 30px
+    h4
+        font-size: 40px
+        padding-bottom: 40px
+    p 
+        font-size: 19px
+        padding-bottom: 60px
+    ul 
+        list-style-type: none
+        li:before
+            content: '>'
+            margin-left: -30px
+            margin-right: 10px
+
+        .list-item
+            transition: .3s ease-in-out
+            pointer-events: none
+            margin-top: -23px
+        li
+            padding-bottom: 10px
+            &:hover
+                .list-item
+                    margin-left: 10px
+                    
+#experience
+    min-height: 100vh
+    padding-top: 300px
+    h3
+        font-size: 70px
+        padding-bottom: 30px
+
+    h4
+        font-size: 40px
+        padding-bottom: 70px
+
+    .body
+        padding-bottom: 80px
+        font-size: 19px
+
+    .cert 
+        min-height: 280px
+
+    .project 
+        min-height: 280px
+
+    .card-container
+        cursor: pointer
+        height: 500px
+        width: 100%
+        color: white
+        transition: .3s
+        .hide,.show
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            transition: .5s
+        .hide
+            top: 50%
+            opacity: 0
+            filter: blur(50px)
+            h6 
+                font-size: 20px
+            img 
+                width: 20px
+                margin: 10px 15px 0 0 
+        .show
+            font-size: 30px
+            opacity: 1
+        &:hover
+            .show 
+                filter: blur(50px)
+                opacity: 0
+            .hide
+                filter: blur(0)
+                opacity: 1
+
+
+    .one
+        background-color: #ffbd69
+        &:hover
+            background-color: #927f66
+    .two
+        background-color: #df5e88
+        &:hover
+            background-color: #a14665
+    .three
+        background-color: #61DAFB
+        &:hover
+            background-color: #3f8a9e
+    .four
+        background-color: #000000
+    .five
+        background-color: #2ada96
+    .six
+        background-color: #525252
+
+    button
+        color: white
+        border-radius: 0
+        font-family: 'Poppins', sans-serif
+        font-weight: 500px
+        padding: 8px
+        margin: 50px 30px 0 0 
+        background-color: #00e0ff
+        border: 1.5px solid #00e0ff
+
+        &:hover
+            background-color: #ffffff
+            color: black
+
+#contact
+    background-color: black
+    min-height: 600px
+    margin-top: 300px
+    color: white
+    h3
+        font-size: 120px
+        padding-bottom: 60px
+        margin-top: 20px
+        mix-blend-mode: difference
+
+    h4
+        font-size: 40px
+        padding-bottom: 70px
+
+    p 
+        padding-bottom: 80px
+        font-size: 21px
+        
+.modal.custom 
+    img
+        // max-width: 50px
+        margin-left: 17px
+    .cert
+        max-width: 100%
+        margin-left: 17px
+
+    .modal-dialog
+        max-width: 1200px
+        width: 100%
+        margin: 0 auto
+    .modal-content
+        border: none
+        border-radius: 0
+    .modal-header
+        border: none
+        h5 
+            font-size: 30px
+
+    .modal-body
+        padding: 0 10vw 0 10vw
+
+    .modal-footer
+        border: none
+
+.in-progress-div
+    img 
+        width: 100%
+        filter: blur(10px)
+
+    h4 
+        font-family: $font-primary
+        font-size: 30px
+        position: absolute
+        top: 100px
+        left: 50%
+        transform: translateX(-50%)
+
+
+@media screen and ( max-width: 768px )
+    #header
+        h1 
+            // color: orange
+            font-size: 60px
+        h2 
+            font-size: 24px
+            color: #0e0c0c73
+        p 
+            font-size: 18px
+
+        .heading-container
+            padding: 0 0 0 40px
+            margin: 0 0 100px -15px
+    #contact
+        h3 
+            font-size: 60px
+    #about 
+        h3
+            font-size: 60px
+    #experience 
+        h3
+            font-size: 60px
+
+
+@media screen and ( min-width: 768px )
+    #header
+        h1 
+            // color: blue
+            font-size: 60px
+        h2
+            font-size: 25px
+        p
+            font-size: 20px
+
+        .heading-container
+            padding: 0 0 100px 40px
+            margin: 0 0 100px -15px
+
+
+
+@media screen and ( min-width: 992px )
+    #header
+        h1 
+            // color: yellow
+            font-size: 60px
+        h2
+            font-size: 25px
+        p 
+            font-size: 20px
+
+        .heading-container
+            padding: 0 0 0 80px
+            // margin: 0 0 100px -15px
+
+@media screen and ( min-width: 1200px )
+    #header
+        h1 
+            // color: green
+            font-size: 80px
+        h2 
+            font-size: 28px
+            color: #0e0c0c73
+        p 
+            font-size: 20px
+        .heading-container
+            padding: 0 0 0 80px
+
+
+#header
+    min-height: 110vh
+#about
+    min-height: 800px
+    min-height: fit-content
+#experience
+    min-height: 800px
+#contact
+    min-height: 800px
